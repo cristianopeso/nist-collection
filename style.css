@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-bottom: 200px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #232323;
+  background-color: #fffcfc;
+  padding: 0 20px;
+}
+
+.container.black {
+  background-color: #232323;
+  color: #fffcfc;
+}
+.nav {
+  display: flex;
+  width: 1144px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .logo {
+  margin: 71px 0;
+}
+.nav .options {
+  display: flex;
+  gap: 55px;
+  color: #232323;
+  font-family: "Asap", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.27px;
+}
+.nav .options .link {
+  text-decoration: none;
+  color: #232323;
+  padding: 10px;
+}
+
+.main_image {
+  width: 100%;
+  height: auto;
+}
+
+.double_card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 50px;
+  width: 100%;
+  margin-top: 50px;
+  height: 50%;
+}
+.double_card .change_image {
+  width: 100%;
+  position: relative;
+}
+
+.double_card .change_image img {
+  height: auto;
+  width: 100%;
+  transition: opacity 0.9s;
+  position: absolute;
+}
+
+.double_card .change_image .hover {
+  opacity: 0;
+}
+
+.double_card .change_image:hover .main {
+  opacity: 0;
+  position: absolute;
+}
+.double_card .change_image:hover .hover {
+  opacity: 1;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+}
